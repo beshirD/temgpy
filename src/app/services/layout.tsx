@@ -3,7 +3,7 @@ import React, { PropsWithChildren } from "react";
 
 export const metadata: Metadata = {
   title:
-    "Our Services | Software Development & AI Solutions",
+    "Software Development & AI Solutions",
   description:
     "Explore Venas Technologies' wide range of services, including custom software development, cloud solutions, and AI-powered systems designed to help your business scale and innovate.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   openGraph: {
     title:
-      "Our Services | Software Development & AI Solutions",
+      "Software Development & AI Solutions",
     description:
       "Explore our comprehensive services at Venas Technologies, from AI and cloud platforms to scalable custom software that drives digital transformation.",
     url: "https://www.venastechnology.com/services",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Our Services | Software Development & AI Solutions",
+      "Software Development & AI Solutions",
     description:
       "Discover how Venas Technologies delivers AI, cloud, and custom software solutions to power your digital growth.",
     images: ["https://www.venastechnology.com/services-preview.png"],
