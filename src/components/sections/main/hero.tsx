@@ -107,7 +107,7 @@ export default function Hero() {
             <Button
               className="rounded-full p-5 md:p-7 text-base font-semibold max-md:w-full"
               data-cal-namespace="schedule-call"
-              data-cal-link="venas/schedule-call"
+              data-cal-link="venas-technologies/30min"
               data-cal-config='{"layout":"month_view","theme":"light"}'
             >
               Book A Free Call
