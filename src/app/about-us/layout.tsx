@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title:
-    "About Venas Technologies | Software Development Company",
+    "About Venas Technologies | Software Company",
   description:
     "Discover Venas Technologies, a trusted software and AI solutions company delivering custom software, cloud platforms, and tech talent to empower businesses globally.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   openGraph: {
     title:
-      "About Venas Technologies | Software Development Company",
+      "About Venas Technologies | Software Company",
     description:
       "Discover Venas Technologies, a trusted software and AI solutions company delivering custom software, cloud platforms, and tech talent to empower businesses globally.",
     url: "https://www.venastechnology.com/about-us",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "About Venas Technologies | Software Development Company",
+      "About Venas Technologies | Software Company",
     description:
       "Discover Venas Technologies, a trusted software and AI solutions company delivering custom software, cloud platforms, and tech talent to empower businesses globally.",
     images: ["https://www.venastechnology.com/media-preview.png"],

@@ -1,5 +1,8 @@
+
 import { Metadata } from "next";
-import React, { PropsWithChildren } from "react";
+// import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren} from "react";
+import ScrollToTop from "../../components/ScrollToTop";
 
 export const metadata: Metadata = {
   title:
@@ -45,7 +48,13 @@ export const metadata: Metadata = {
 };
 
 const ServicePageLayout = ({ children }: PropsWithChildren) => {
-  return <>{children}</>;
+  return(
+  <>
+  <ScrollToTop />
+  {children}
+  </>
+  );
 };
+
 
 export default ServicePageLayout;

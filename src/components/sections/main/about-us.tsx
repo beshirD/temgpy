@@ -1,9 +1,15 @@
+"use client";
+
 import SectionShow from "@/components/section-show";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { CircleCheck } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 export default function AboutUs() {
+  const router = useRouter();
+
   return (
     <section className="w-screen flex items-center justify-center mx-auto bg-background2 overflow-hidden  py-14 md:py-18 lg:py-20">
       <div className="flex flex-col   justify-center items-start mx-auto px-4  lg:w-[1242px] ">
@@ -27,12 +33,19 @@ export default function AboutUs() {
             </p>
 
             <Button
+              
               data-aos="fade-up"
               data-aos-duration="500"
               data-aos-delay="700"
               className=" rounded-full mt-6  md:mt-8 lg:mt-12 w-fit py-4 px-7"
               size={"lg"}
-            >
+              onClick={() => {
+        // Navigate to /about-us
+        router.push("/about-us");
+        // Scroll to top immediately after navigation
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+    >
               <Link href={"/about-us"}>More About Us!</Link>
             </Button>
           </div>

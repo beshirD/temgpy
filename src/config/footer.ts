@@ -1,11 +1,35 @@
 export const footerData = {
   SERVICES: [
-    "Software development",
-    "Talent Outsourcing",
-    "UI/UX Design",
-    "Admin Dashboard Development",
-    "Ai & Cloud Solution",
-    "IT Consultation",
+    {
+      label: "Software development",
+      href: "/services/custom-software-development",
+    },
+    {
+      label: "Talent Outsourcing",
+      href: "/services/service-01",
+    },
+    {
+      label: "UI/UX Design",
+      href: "/services/service-02",
+    },
+    {
+      label: "Admin Dashboard Development",
+      href: "/services/service-03",
+    },
+    {
+      label: "Ai & Cloud Solution",
+      href: "/services/service-04",
+    },
+    {
+      label: "IT Consultation",
+      href: "/services/service-10",
+    },
+    // "Software development",
+    // "Talent Outsourcing",
+    // "UI/UX Design",
+    // "Admin Dashboard Development",
+    // "Ai & Cloud Solution",
+    // "IT Consultation",
   ],
   LINKS: [
     {

@@ -72,7 +72,7 @@ export const services: Service[] = [
       "Showcase properties with advanced search, filtering, and management tools that simplify buying, selling, or renting.",
   },
   {
-    id: "service-11",
+    id: "custom-software-development",
     image: "/services/Top-Software-development-Company.webp",
     title: "Custom Software Development Services",
     description:

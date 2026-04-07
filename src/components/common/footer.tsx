@@ -119,11 +119,24 @@ export default function Footer() {
               Services
             </p>
 
-            {footerData.SERVICES.map((service) => (
+            {/* {footerData.SERVICES.map((service) => (
               <div key={service} className="relative group">
                 <div className="text-white/70">{service}</div>
               </div>
-            ))}
+            ))} */}
+            
+
+            {footerData.SERVICES.map((service) => (
+            <div key={service.href} className="relative group">
+            <Link
+      href={service.href}
+      className="text-white/70 hover:text-white transition"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    >
+      {service.label}
+    </Link>
+  </div>
+))}
           </div>
 
           <div

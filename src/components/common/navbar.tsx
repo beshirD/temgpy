@@ -183,6 +183,7 @@ export default function Navbar() {
           })}
           <Link
             href="/contact-us"
+            scroll={true}
             className="py-3 transition-colors duration-300  font-normal text-base flex items-center gap-1 border-b border-white/10"
             onClick={(e) => {
               setIsMenuOpen(false);

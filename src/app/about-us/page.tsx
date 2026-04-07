@@ -1,3 +1,5 @@
+"use client";
+
 import AboutUs from "@/components/sections/about/about-us";
 import CoreValues from "@/components/sections/about/core-values";
 import Home from "@/components/sections/about/home";
@@ -11,12 +13,17 @@ import Partners from "@/components/sections/main/partners";
 import Canonical from "@/seo/Canonical";
 import React from "react";
 import ContactFooter from "@/components/common/contact-footer";
+import { useEffect } from "react";
+
 
 // SEO - AboutPage Schema
 
 import AboutPageSchema from "@/seo/AboutPageSchema";
 
 export default function page() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Canonical uid="about-us" /> {/* dynamic canonical */}

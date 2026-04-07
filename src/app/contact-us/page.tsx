@@ -16,6 +16,10 @@ import { getCalApi } from "@calcom/embed-react";
 
 const ContactUsPage = () => {
   useEffect(() => {
+    // 🔹 Scroll to top instantly
+    window.scrollTo(0, 0);
+
+    // 🔹 Cal API
     (async function () {
       const cal = await getCalApi({ namespace: "schedule-call" });
       cal("ui", {
