@@ -20,7 +20,7 @@ import { useEffect } from "react";
 
 import AboutPageSchema from "@/seo/AboutPageSchema";
 
-export default function page() {
+export default function Page() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
