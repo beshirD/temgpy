@@ -11,6 +11,7 @@ interface SocialLink {
   name: string;
   icon: React.ReactNode;
   url: string;
+  label: string;
   width?: number;
 }
 
@@ -34,11 +35,13 @@ export default function FooterSocials() {
     {
       name: "LinkedIn",
       icon: <Linkedin className="h-5 w-5" />,
+      label: "Follow Venas Technologies on LinkedIn",
       url: "https://www.linkedin.com/company/106809924",
     },
     {
       name: "Upwork",
       icon: <Icons.Upwork className="h-5 w-5" />,
+      label: "Hire Venas Technologies on Upwork",
       url: "https://www.upwork.com/agencies/1906779003227193271/",
     },
     // {
@@ -68,6 +71,7 @@ export default function FooterSocials() {
               key={link.name}
               href={link.url}
               target="_blank"
+              aria-label={link.label}
               rel="noopener noreferrer"
               className="flex h-10 items-center rounded-full bg-transparent shadow-md outline outline-1 outline-offset-[-1px] outline-neutral-300/25"
               onHoverStart={() => setActiveIndex(index)}
@@ -82,7 +86,7 @@ export default function FooterSocials() {
               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center text-white">
                 {link.icon}
               </div>
-
+              <span className="sr-only">{link.label}</span>
               <div
                 className="overflow-hidden"
                 style={{
